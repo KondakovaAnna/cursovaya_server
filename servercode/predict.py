@@ -40,10 +40,10 @@ MODEL_PATH = os.getcwd() + "/nets/resnet18_train30ep_v2reg"
 PREPROCESS_SETUP = T.Compose([
             T.Resize(32),
             T.ToTensor(),
-            T.Normalize(
-                mean=[0.485, 0.456, 0.406],
-                std=[0.229, 0.224, 0.225]
-            )
+            # T.Normalize(
+            #     mean=[0.485, 0.456, 0.406],
+            #     std=[0.229, 0.224, 0.225]
+            # )
         ])
 
 JSON_PATH = os.getcwd() + "/class_num.json"
